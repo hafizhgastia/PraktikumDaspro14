@@ -1,6 +1,6 @@
 //P=14
 //(batas perulangan FOR) = 8 + (14 mod 5)=12
-//Batas kelulusan pada Pertanyaan no. 4 (modifikasi kode) = 55 + (14 mod 11)=58 → gantikan angka 60 pada soal 
+//Batas kelulusan pada Pertanyaan no. 4 (modifikasi kode) = 55 + (14 mod 11)=58, gantikan angka 60 pada soal 
 package Pertemuan9;
 import java.util.Scanner;
 
