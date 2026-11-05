@@ -47,7 +47,6 @@ public class Tugas3_14 {
                 System.out.println("Total barang seluruh toko: " + totalSemua);
                 System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
             }
-            sc.close();
         }
     }
 }
