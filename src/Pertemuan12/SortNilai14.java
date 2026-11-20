@@ -6,6 +6,8 @@ public class SortNilai14 {
         
         int[] nilai = {34, 49, 26, 64, 14, 39};
 
+        System.out.println("Sebelum diurutkan: " + Arrays.toString(nilai));
+
         for (int i = 0; i < nilai.length - 1; i++) {
             for (int j = 0; j < nilai.length - 1 - i; j++) {
                 if (nilai[j] > nilai[j + 1]) {
@@ -15,6 +17,6 @@ public class SortNilai14 {
                 }
             }
         }
-        System.out.println(Arrays.toString(nilai));
+        System.out.println("Sesudah diurutkan (descending): " + Arrays.toString(nilai));
     }
 }
