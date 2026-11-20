@@ -5,8 +5,10 @@ public class ArrayRataNilai14 {
     public static void main(String[] args) {
         Scanner Hafizh = new Scanner(System.in);
 
-        int[] nilaiMhs = new int[10];
-        int total = 0;
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int n = Hafizh.nextInt();
+        int[] nilaiMhs = new int[n];
+        int total = 0;    
         double rata2;
 
         for (int i = 0; i < nilaiMhs.length; i++) {
