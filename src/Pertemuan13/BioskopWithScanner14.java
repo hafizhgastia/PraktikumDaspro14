@@ -21,17 +21,23 @@ public class BioskopWithScanner14 {
             if(menu == 1){
                 System.out.print("Masukkan nama: ");
                 nama = Hafizh.nextLine();
-                System.out.print("Masukkan baris (1-4): ");
-                baris = Hafizh.nextInt();
-                System.out.print("Masukkan kolom (1-2): ");
-                kolom = Hafizh.nextInt();
-                Hafizh.nextLine();
                 
-                if(baris < 1 || baris > 4 || kolom < 1 || kolom > 2){
-                    System.out.println("Baris/kolom tidak valid!");
-                } else {
-                    penonton[baris-1][kolom-1] = nama;
-                    System.out.println("Data tersimpan.");
+                boolean sudahIsi = true;
+                while(sudahIsi){
+                    System.out.print("Masukkan baris (1-4): ");
+                    baris = Hafizh.nextInt();
+                    System.out.print("Masukkan kolom (1-2): ");
+                    kolom = Hafizh.nextInt();
+                    Hafizh.nextLine();
+                    
+                    if(baris < 1 || baris > 4 || kolom < 1 || kolom > 2){
+                        System.out.println("Tidak valid!");
+                    } else if(penonton[baris-1][kolom-1] != null){
+                        System.out.println("Kursi sudah diisi " + penonton[baris-1][kolom-1] + "!");
+                    } else {
+                        penonton[baris-1][kolom-1] = nama;
+                        sudahIsi = false;
+                    }
                 }
             } 
             else if(menu == 2){
