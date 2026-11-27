@@ -29,7 +29,7 @@ public class BioskopWithScanner14 {
                     System.out.print("Masukkan kolom (1-2): ");
                     kolom = Hafizh.nextInt();
                     Hafizh.nextLine();
-                    
+
                     if(baris < 1 || baris > 4 || kolom < 1 || kolom > 2){
                         System.out.println("Tidak valid!");
                     } else if(penonton[baris-1][kolom-1] != null){
@@ -44,10 +44,10 @@ public class BioskopWithScanner14 {
                 System.out.println("\nDaftar Penonton:");
                 for(int i = 0; i < penonton.length; i++){
                     for(int j = 0; j < penonton[i].length; j++){
-                        if(penonton[i][j] != null)
-                            System.out.print(penonton[i][j] + "\t");
+                        if(penonton[i][j] == null)
+                            System.out.print("***\t");
                         else
-                            System.out.print("-\t");
+                            System.out.print(penonton[i][j] + "\t");
                     }
                     System.out.println();
                 }
