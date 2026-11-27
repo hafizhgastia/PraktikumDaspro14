@@ -5,7 +5,16 @@ public class SIAKAD14 {
     public static void main(String[] args) {
         Scanner Hafizh = new Scanner(System.in);
 
-        int[][] nilai = new int[4][3];
+        int jmlMhs, jmlMk;
+        do {
+            System.out.print("Jumlah mahasiswa: ");
+            jmlMhs = Hafizh.nextInt();
+        } while (jmlMhs <= 0);
+        do {
+            System.out.print("Jumlah mata kuliah: ");
+            jmlMk = Hafizh.nextInt();
+        } while (jmlMk <= 0);
+        int[][] nilai = new int[jmlMhs][jmlMk];
 
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("Input nilai mahasiswa ke-" + (i + 1));
