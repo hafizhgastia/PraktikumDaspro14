@@ -26,8 +26,13 @@ public class BioskopWithScanner14 {
                 System.out.print("Masukkan kolom (1-2): ");
                 kolom = Hafizh.nextInt();
                 Hafizh.nextLine();
-                penonton[baris-1][kolom-1] = nama;
-                System.out.println("Data tersimpan.");
+                
+                if(baris < 1 || baris > 4 || kolom < 1 || kolom > 2){
+                    System.out.println("Baris/kolom tidak valid!");
+                } else {
+                    penonton[baris-1][kolom-1] = nama;
+                    System.out.println("Data tersimpan.");
+                }
             } 
             else if(menu == 2){
                 System.out.println("\nDaftar Penonton:");
